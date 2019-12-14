@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>North Shore</title>
+
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Yu Hao" />
+
+        <!-- Feeds -->
+
+        <!-- Style -->
+        <link href="http://fonts.google.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="/theme/favicon.ico" />
+
+        <!-- Google analytics -->
+
+    </head>
+    <body>
+        <div id="wrapper">
+          <div id="blogtitle">North Shore</div>
+
+          <!-- Blogroll -->
+          <ul id="mainnav">
+            <li><a href="https://weibo.com/whimsicalyuhao">Weibo</a></li>
+          </ul>
+
+          <div class="clearboth"></div>
+          <div id="content">
+<section id="content">
+
+
+  <div class="row">
+    <div class=article-overview>
+      <div class=date>周六 04 三月 2017</div>
+      <div class=detail>
+        <h1><a href="/week-one-of-march.html" title="Permalink to week one of March">week one of March</a></h1>
+        <div class=summary><p>I came back to college from home as late as possible, which is just like on every end of winter vacations. The work of the project took up most of the week, but still no promising progress was made.</p>
+
+<p><p><br /></p> 
+<p>Not being able to graduate in due time keeps bothering me …</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周五 03 七月 2015</div>
+      <div class=detail>
+        <h1><a href="/anacondashi-yong-mpl_toolkitsde-fang-fa.html" title="Permalink to Anaconda使用mpl_toolkits的方法">Anaconda使用mpl_toolkits的方法</a></h1>
+        <div class=summary><p>matplotlib已经成为使用python进行科学计算绘图的标准装备，而今天在Anaconda发行版下使用matplotlib提供的mpl_toolkits进行三维图形绘制时，却遇到了问题，mpl_toolkits相关py文件明明在目录之下，运行时却还是提示No module named 'mpl_toolkits'的提示，一贯稳定方便的Anaconda下还会出现这样的问题，面对网络中似是而非的解决办法，一时间有些无所适从。</p>
+
+<p><p>一些人说问题在于一个namespace package的概念，也就是将同一命名空间内的包分散在不同文件夹下存储时产生的问题，而我按照以下方法查看mpl_toolkits的路径时</p> 
+<p>import importlib</p> 
+<p>importlib.import_module('mpl_toolkits').<strong>path</strong></p> 
+<p>显示的路径当中已经包含__init__.py文件，却不包含必要函数文件，也就是问题在于没有指向正确的文件夹，这是问题似乎进入了无法解决境地。</p> 
+<p>然而有洁癖的我在查看anaconda根目录时发现以前几乎所有版本的packages都保存在目录下面，占用巨大空间，进而想到要用conda clean命令来清理安装目录，或许可以解决连接的混乱。</p> 
+<p>没想到，在清理之后，问题真的解决了。。。。。。。</p> 
+<p>这时再查看mpl_toolkits的路径，显示出来的就是正确的位置了。</p> 
+<p>————————————————————————————————</p> 
+<p>之后发现，mpl_toolkits文件夹下的__init__.py文件的确是basemap包&nbsp;创建的。发现过程是这样的：由于basemap包体积巨大，而且目前用不到，因而考虑将其卸载，进而conda uninstall basemap，删除之后，matplotlib又找不到mpl_toolkits了，进入目录发现 …</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周五 26 六月 2015</div>
+      <div class=detail>
+        <h1><a href="/5fen-zhong-di-qiu-wu-li-fan-yan.html" title="Permalink to 5分钟地球物理反演">5分钟地球物理反演</a></h1>
+        <div class=summary><p reblogfrom="reblogfrom"  ><a target="_blank" href="http://north-shore.lofter.com/post/1861fa_431d923"  >North Shore:</a></p>
+
+<p><blockquote> 
+ <p>每次有人提到反演问题的时候，顿时整个人都感觉高大上了。反演课程在学校里也算是比较难学的一门课了。打开研一的时候老师让买的由本学院一位老师王家映编写的《地球物理反演理论》教材，翻了两页就有种想把它撕了的感觉，该书对于概念和理论讲得是似是而非、模棱两可，读起来晦涩生硬，这样的教材居然还是什么“教育部推荐“，我真是***，你懂的。当然在大学学习嘛，不想看的书也要硬着头皮看，上课的时候还要忍受个别教师的自以为标准的乡村英语，忽然感觉自己以前真是蛮拼的。</p> 
+ <p>知道最近，机缘巧合之中被我发现一本旷世奇书《Global Optimization methods in geophysical inversion》,人家这本萌书本来是在着重讲非线性的反演方法，可是它却用了一章的篇幅，讲述了整个离散的地球物理反演理论，其优点不仅在于简明扼要，更在于思路清晰，读起来似有一阵清风扑面而来。这也就促使我利用读书机会复习总结梳理一下本来混乱的地球物理反演思路。</p> 
+ <p>本来想写成一个比较专业的快速介绍地球物理反演的博文，没想到还是变成了纯吐槽。。。。</p> 
+</blockquote></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周四 25 六月 2015</div>
+      <div class=detail>
+        <h1><a href="/du-why-the-west-rules-for-now-1211.html" title="Permalink to 读《Why the west rules for now》12.11">读《Why the west rules for now》12.11</a></h1>
+        <div class=summary><p>开始读《Why the West Rules for now》这本书实际上是因为微博上蔡康永的推荐，本来推荐的是中文译本，不过一是因为这本书是在美国讲学的英国教授的英文著作，二来也是由于对于中文翻译质量的信心丧失，导致我还是选择了读英文的原著。上网一查，发现原来2010年刚出版时，本书还被FT中文网推荐过，在当下中国蓬勃发展、大有超越西方之势的形势之下，东西方问题自然而然的成为了人们热衷的话题，这本书也正是迎合了人们的这种趣味。另外本书的标题更是达到了网络标题党的水准，无论是什么样的内容，都会叫人有点开看看的冲动。</p>
+
+<p><p>许多人都不愿意承认，不过又不得不承认，我们今天就是生活在一个西方主导的世界，甚至是生活在一个西方思想、西方生活方式主导下的中国。无论是在衣食住行还是在思想制度方面，除了饮食上的独树一帜，今天的中国人已经几乎与西方无异，今天的现代化已经几乎等同于西方化。因而许多人感到有责任复兴中国的传统文化，笔者认为大可不必，一方面，不同时代有不同时代的思想、面貌，因为不同、因为变化、历史才精彩，另一方面，一个民族的特质早已在长期的大浪淘沙之中积淀下来，润物细无声地沁润在我们不自知的各个方面，所以像“穿汉服”这样的荒唐事，就当成行为艺术欣赏吧。</p> 
+<p>作者身为历史教授，以其渊博的历史知识纵览古今中外。其中的篇幅巨大第二部分以新的世界史观，并在东西方两条平行的线索上 …</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周一 22 四月 2013</div>
+      <div class=detail>
+        <h1><a href="/cygwin-rebaseall-he-pangowen-jian-jia.html" title="Permalink to Cygwin rebaseall 和 pango文件夹">Cygwin rebaseall 和 pango文件夹</a></h1>
+        <div class=summary><p> </p>
+
+<p><p>今天安装配置cygwin时遇到了两个奇怪的问题。</p> 
+<p>其一，是安装新的软件包时，cygwin的setup.exe程序会显示一个奇怪的错误，其中包含pango.sh。</p> 
+<p>解决方法更奇怪，只要自己建立etc/pango 目录即可。</p> 
+<p>其二，是在安装了xorg-server、xinit、gnuplot以后，用来画图会显示一个有fork() 的错误，这里就要用到rebaseall工具。</p> 
+<p>下面是wiki条目：</p> 
+<p> </p> 
+<p>Rebasing 表示的是指建立一个<a title="&#20849;&#20139;&#24211;&#65288;&#39029;&#38754;&#19981;&#23384;&#22312;&#65289;" target="_blank" rel="nofollow" href="http://zh.wikipedia.org/w/index.php?title=%E5%85%B1%E4%BA%AB%E5%BA%93&amp;action=edit&amp;redlink=1"  >共享库</a><a title="&#26144;&#20687;&#65288;&#39029;&#38754;&#19981;&#23384;&#22312;&#65289;" target="_blank" rel="nofollow" href="http://zh.wikipedia.org/w/index.php?title=%E6%98%A0%E5%83%8F&amp;action=edit&amp;redlink=1"  >映像</a>的过程，这种方式可以保证在使用虚拟内存的时候不会与系统中其他以装载的共享库冲突。</p> 
+<p>这个技术广被泛地使用在&nbsp;<a title="Win32" target="_blank" rel="nofollow" href="http://zh.wikipedia.org/wiki/Win32"  >Win32</a>&nbsp;平台上，用于避免系统DLL文件<a title="&#37325;&#36617;" target="_blank" rel="nofollow" href="http://zh.wikipedia.org/wiki/%E9%87%8D%E8%BC%89"  >重载</a>造成的地址溢出。</p> 
+<p>一些在Linux/x86系统上的安全方面的扩展部分使用Rebasing 技术。 为了把地址0x00作为所有编码的指针，用它限制能够使用的代码地址在0x00ffffff以下；这可以消除一些安全方面的内存溢出问题， 这些问题往往涉及了错误的零点校验结束字符串，一般在C程序语言中。</p> 
+<p>&nbsp;</p> 
+<p>在win7下只要：</p> 
+<p> </p> 
+<p>/usr/bin/rebaseall -v</p> 
+<p>exit</p> 
+<p>一切就完成了。</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周五 19 四月 2013</div>
+      <div class=detail>
+        <h1><a href="/visual-c-xiao-wen-ti.html" title="Permalink to Visual C++ 小问题">Visual C++ 小问题</a></h1>
+        <div class=summary><p> </p>
+
+<p><p>在MFC项目中，使用STL中的valarray模板，会发生一个问题。</p> 
+<p> MFC项目需要WinDef.h头文件，其中定义了max()和min()两个函数，这与valarray模板中的成员函数max()和min()发生了冲突，产生了歧义，尝试了使用严格的限定符，没有作用。</p> 
+<p>最后在<a target="_blank" rel="nofollow" href="http://social.msdn.microsoft.com/Forums/en-US/vcgeneral/thread/089f654a-bb85-4dd5-ac01-8a72ecf9bdb1/"  >http://social.msdn.microsoft.com/Forums/en-US/vcgeneral/thread/089f654a-bb85-4dd5-ac01-8a72ecf9bdb1/</a>这里找到了答案，原来只要使用在valarray对象前面使用#undef max 和#undef min就能正常使用模板中的成员函数了。</p> 
+<p>不过依然不理解为什么WinDef.h 中的函数可以覆盖STL中的函数，且使用限定符也没作用。</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周日 07 四月 2013</div>
+      <div class=detail>
+        <h1><a href="/fftwying-yong-yu-visual-studio-2010xiang-mu-zhong.html" title="Permalink to FFTW应用于Visual Studio 2010项目中">FFTW应用于Visual Studio 2010项目中</a></h1>
+        <div class=summary><p> </p>
+
+<p><p>FFTW官方网站上提供编译好的<a target="_blank" rel="nofollow" href="http://www.fftw.org/install/windows.html"  >DLL</a>文件。</p> 
+<p>下载解压后，在Visual Studio 2010中打开Tools &gt; Visual Studio Command Prompt ，转到解压后的文件夹中（比如D:\fftw），使用VS2010自带的lib.exe软件生成LIB文件：</p> 
+<p>32位：</p> 
+<p> </p> 
+<p>lib /machine:ix86 /def:libfftw3-3.def</p> 
+<p>lib /machine:ix86 /def:libfftw3f-3.def</p> 
+<p>lib /machine:ix86 /def:libfftw3l-3.def</p> 
+<p>64位：</p> 
+<p> </p> 
+<p>lib /machine:x64 /def:libfftw3-3.def</p> 
+<p>lib /machine:x64 /def:libfftw3f-3.def</p> 
+<p>lib /machine …</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周二 02 四月 2013</div>
+      <div class=detail>
+        <h1><a href="/du-dao-he-de-de-zhe-duan-hua-bian-you-zeng-tian-liao-wo-dui-ta-de-jing-yi.html" title="Permalink to 读到 赫德 的这段话，便又增添了我对他的敬意">读到 赫德 的这段话，便又增添了我对他的敬意</a></h1>
+        <div class=summary><p> </p>
+
+<p><p> 在一份日期为1864年6月21日的通告中，赫德阐述了属于外籍雇员『守则』之类的种种规定。他建议他们学习汉语、做事耐心而『不带优越感』、工作时『力争说服他人而非发号施令』、『勤于补救而不发脾气，因发脾气便会暴露缺点』，他以果断明了的语气告诉他们：</p> 
+<p> 应时刻铭记，税务司署乃中国之海关而非外国之海关所有，故而，本署各员之天职应向着中国之官民行事，以杜绝任何冒犯与恶意之缘由……领取中国政府之俸禄因而身为该政府属员之人，处事理应不犯其禁讳，亦不惹其嫉猜厌恨。故本司署外籍雇员与中国官员交往时应切记，尔等乃彼等之同僚，而与中国平民人等交往时亦应切记，尔等颇有义务及责任姑作彼等之同胞：怀此念者即可趋于待官吏以礼貌，待百姓以友善矣。</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周四 21 三月 2013</div>
+      <div class=detail>
+        <h1><a href="/mar-21st-2013.html" title="Permalink to Mar 21st 2013">Mar 21st 2013</a></h1>
+        <div class=summary><p> </p>
+
+<p><p>今天看完了C++ Primer Plus 的真正介绍类之前的部分，果然书的内容十分细致，今天的存储类型与命名空间读时感到兴趣盎然。同时，《中》读到了鸦片战争，虽是老生常谈的话题，但丰富的历史细节在符合逻辑的链接之后，读来颇有趣味。</p> 
+<p>细节之乐趣需细心体会。</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+    <div class=article-overview>
+      <div class=date>周三 20 三月 2013</div>
+      <div class=detail>
+        <h1><a href="/mar-20th-2013.html" title="Permalink to Mar. 20th 2013">Mar. 20th 2013</a></h1>
+        <div class=summary><p> </p>
+
+<p><p>今日阅读了有关清代对外贸易的简要情况。</p> 
+<p>另外，观看了近日微博上极为流行的美国迷你剧《The Bible》，从Abraham、Moses、Joshua一直看到了巨人Samson，唯一新奇的发现是：居然出卖Samson，剪掉他的头发是他失去神力的女子居然叫Delilah。因而怀疑Hey There Delilah 这首歌有没有什么特别寓意。</p> 
+<p> 其他时间看CCCCCCCCCCCCCCCCCCCCCCC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p></p></div>
+      </div>
+
+      <!-- tags list -->
+    </div>
+  </div><!-- /.row -->
+
+<div class="pagination">
+<ul>
+<li class="prev disabled"><a href="#">&larr; </a></li>
+<li class="active"><a href="/index.html">1</a></li>
+<li class=""><a href="/index2.html">2</a></li>
+<li class=""><a href="/index3.html">3</a></li>
+<li class=""><a href="/index4.html">4</a></li>
+<li class=""><a href="/index5.html">5</a></li>
+<li class=""><a href="/index6.html">6</a></li>
+<li class=""><a href="/index7.html">7</a></li>
+<li class=""><a href="/index8.html">8</a></li>
+<li class=""><a href="/index9.html">9</a></li>
+<li class=""><a href="/index10.html">10</a></li>
+<li class=""><a href="/index11.html">11</a></li>
+<li class=""><a href="/index12.html">12</a></li>
+<li class=""><a href="/index13.html">13</a></li>
+<li class=""><a href="/index14.html">14</a></li>
+<li class="next"><a href="/index2.html"> &rarr;</a></li>
+</ul>
+</div>
+</section><!-- /#content -->
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class=footer>
+          <div class="textwidget">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+          <p>
+            Carburize with <a href="http://blog.getpelican.com">pelican</a></p>
+          <p><a href="https://github.com/badele/pelican-theme-jesuislibre">jesuislibre</a> theme, inspired by <a href="http://blog.dbrgn.ch">dbrng</a> blog</p>
+          <p><a href="http://bruno.adele.im">about author</a></p>
+      </div>
+
+
+     </body>
+</html>

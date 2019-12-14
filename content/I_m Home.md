@@ -1,0 +1,8 @@
+Title: I'm Home
+Date: 2009-01-15 12:10
+
+<p> </p> 
+<p>终于回家了，期待了一整个学期，经历了漫长的飞行，终于回家了。<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /> 家里很温暖，虽然是在冰天雪地的北方，不仅是身体感受到的温暖更是心中感受到的温暖。<br /> <br />我曾经从未感觉家里豪华，但经历了一个学期的住校生活，再回到家里，那种感觉像是宇航员重返地球一样。<br /> <br />白天一个人在家很舒服，想做什么就做什么，不像在学校，你很难想象一间屋子里住着八个人是怎样一幅景象，我就那种环境中生活了一个学期。简陋，破旧，凌乱，肮脏，这似乎当我想起它时，最容易想到的词了。<br /> <br />&nbsp;我最近的理想已经不是其他的什么了，而是离开这所垃圾的学校，然而离开垃圾，并且不让自己成为垃圾是很难的事情，所以未来要付出的会很多，过的会很难。<br /> <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 春节就要来了，忘掉上一年的一切失意，一切不快，享受新年的祝福，享受家的温暖吧！<br /></p> 
+<p><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif"  real_src="http://img64.pp.sohu.com/images/blog/2007/3/2/5/2/111a5f6e790.jpg"  alt="I'm&nbsp;Home"  title="I'm&nbsp;Home"  style="max-width:500px;"  /><br /> </p> 
+<br /> 
+<br />
